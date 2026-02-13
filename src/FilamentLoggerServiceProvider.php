@@ -1,6 +1,6 @@
 <?php
 
-namespace Z3d0X\FilamentLogger;
+namespace matheuskrenn\FilamentLogger;
 
 use Filament\Facades\Filament;
 use Filament\Panel;
@@ -31,7 +31,7 @@ class FilamentLoggerServiceProvider extends PackageServiceProvider
             ->hasInstallCommand(function (InstallCommand $installCommand) {
                 $installCommand
                     ->publishConfigFile()
-                    ->askToStarRepoOnGitHub('z3d0x/filament-logger')
+                    ->askToStarRepoOnGitHub('matheuskrenn/filament-logger')
                     ->startWith(function (InstallCommand $installCommand) {
                         $installCommand->call('vendor:publish', [
                             '--provider' => "Spatie\Activitylog\ActivitylogServiceProvider",

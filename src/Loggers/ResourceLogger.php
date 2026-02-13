@@ -1,6 +1,6 @@
 <?php
 
-namespace Z3d0X\FilamentLogger\Loggers;
+namespace matheuskrenn\FilamentLogger\Loggers;
 
 class ResourceLogger extends AbstractModelLogger
 {

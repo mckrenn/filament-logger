@@ -1,6 +1,6 @@
 <?php
 
-namespace Z3d0X\FilamentLogger\Loggers;
+namespace matheuskrenn\FilamentLogger\Loggers;
 
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Notifications\Events\NotificationFailed;
@@ -27,9 +27,9 @@ class NotificationLogger
         } else {
             $description = $notification.' Notification failed';
         }
-        
+
         $receipent = $this->getRecipient($event->notifiable, $event->channel);
-        
+
         if($receipent) {
              $description .= ' to '.$receipent;
         }
